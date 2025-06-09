@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "ParcelLink",
   "version": "2.0",
-  "description": "Rozšíření do Google Chrome, které v administrativním prostředí Mixit automaticky převede sledovací čísla zásilek na klikací odkazy přímo na stránky dopravců. Pro dopravce GLS a DPD navíc při kliknutí zkopíruje číslo do schránky.",
+  "description": "Toto rozšíření pro Google Chrome automaticky rozpozná sledovací čísla zásilek v administraci Mixit a převádí je na odkazy, které vedou přímo na stránku dopravce a otevřou se na nové kartě. U dopravců GLS a DPD, jejichž sledovací systémy neumožňují přímé otevření zásilky podle URL, rozšíření při kliknutí na odkaz zároveň zkopíruje číslo zásilky do schránky, aby jej bylo možné snadno vložit do formuláře pro sledování.",
   "permissions": ["activeTab"],
   "content_scripts": [
     {
