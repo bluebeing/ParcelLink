@@ -16,8 +16,8 @@ Rozšíření automaticky rozpozná sledovací čísla zásilek v administraci M
 | Dopravce    | Formát čísla                 | Odkaz / Kopírování   |
 | ----------- | ---------------------------- | -------------------- |
 | Packeta     | `Z` + 10 číslic              | přímý odkaz          |
-| GLS         | 11 číslic začínajících `9`   | kopírování + stránka |
-| PPL         | 11 číslic nezačínajících `9` | přímý odkaz          |
+| GLS         | 11 číslic první číslo `0 a 9`| kopírování + stránka |
+| PPL         | 11 číslic první číslo `1-9`  | přímý odkaz          |
 | Česká pošta | `DR` + ≥10 číslic + `U`      | přímý odkaz          |
 | DPD         | 14 číslic                    | kopírování + stránka |
 
