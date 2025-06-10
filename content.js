@@ -15,14 +15,14 @@ function createTrackingLink(trackingText) {
     link.href = `https://tracking.app.packeta.com/cs/${normalizedText}`;
     link.dataset.carrier = 'packeta';
   }
-  // GLS: 11 číslic, začíná 9
-  else if (/^9\d{10}$/.test(normalizedText)) {
+  // GLS: 11 číslic, začíná 0 a 9
+  else if (/^[09]\d{10}$/.test(normalizedText)) {
     link = document.createElement('a');
     link.href = 'https://gls-group.com/CZ/cs/sledovani-zasilek';
     link.dataset.carrier = 'gls';
-  }
-  // PPL: 11 číslic, nezačíná 9
-  else if (/^[0-8]\d{10}$/.test(normalizedText)) {
+}
+  // PPL: 11 číslic, začíná 1 - 8
+  else if (/^[1-8]\d{10}$/.test(normalizedText)) {
     link = document.createElement('a');
     link.href = `https://www.ppl.cz/detail-zasilky?shipmentId=${normalizedText}`;
     link.dataset.carrier = 'ppl';
